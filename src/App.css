@@ -1,32 +1,342 @@
-.App {
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Beginning of custom code */
+
+@import url('https://fonts.googleapis.com/css?family=Questrial|Dancing+Script');
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.topbar {
+  height: 40px;
+  font-size: 1.4rem;
+  background-color: black;
+  padding-top: 9px;
+  padding-left: 20px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.nav-bar {
+  background-color: RGBA(145, 145, 145,0.9);
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+
+.nav-bar ul {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5%;
+  padding-left: 10%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.double-border {
+  padding: 5px;
+  border: 1px solid lightgray;
+}
+
+.menu {
+  padding: 5px;
+  border: 1px solid lightgray;
+}
+
+.brand {
+  text-decoration: none;
+  color: lightgray;
+  font-size: 3.5rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.nav-items {
+color: lightgray;
+font-size: 2rem;
+font-family: 'Questrial', sans-serif;
+}
+
+.body-background{
+  background-color: black;
+  color: lightgray;
+}
+
+.home-carousel {
+  margin-right: auto;
+  height: 430px;
+  width: 100%;
+}
+
+.header-title {
+  position: absolute;
+  width: 300px;
+  z-index: 4;
+  margin-top: 150px;
+  margin-left: 38%;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid white;
+  outline: 1px solid white;
+  outline-offset: 10px;
+}
+
+.header-title h1{
+font-size: 5rem;
+font-family: 'Dancing Script', cursive;
+}
+
+.header-title h2{
+font-size: 3rem;
+font-family: 'Questrial', sans-serif;
+}
+
+
+.carousel-item > img { 
+  width: 100%; 
+}
+/* 
+.home-header {
+  padding-top: 100px;
+  height: 500px;
+  width: 100%;
+  background: url(./images/HomeDesktopFire.jpg) no-repeat center center;
+  background-size: auto 500px;
+  border-bottom: 2px solid gray;
+}
+
+.home-header-text {
+  /* border: 1px solid white; */
+  /* width: 300px;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 100px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.home-header-text h1 {
+  font-size: 7rem;
+  font-family: 'Dancing Script', cursive;
+  padding-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-header-text h4 {
+  font-size: 3rem;
+  font-family: 'Questrial', sans-serif;
+} */
+
+.about {
+  display: flex;
+  height: 500px;
+  margin: 50px 20%;
+  justify-content: space-between;
+}
+
+.about h4 {
+  font-size: 2rem;
+  font-family: 'Questrial', sans-serif;
+}
+
+.about-column-one {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 45%;
 }
 
-.App-link {
-  color: #61dafb;
+.about-column-one h1 {
+  font-size: 3rem;
+  font-family: 'Questrial', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-column-one h4{
+  font-size: 2rem;
+  font-family: 'Questrial', sans-serif;
+}
+.about-column-one p{
+  font-size: 1.6rem;
+  font-family: 'Questrial', sans-serif;
+}
+
+.about-column-two {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.about-column-two h1 {
+  font-size: 3rem;
+  font-family: 'Questrial', sans-serif;
+}
+
+.about-column-two h4{
+  font-size: 2rem;
+  font-family: 'Questrial', sans-serif;
+}
+.about-column-two p{
+  font-size: 1.6rem;
+  font-family: 'Questrial', sans-serif;
+}
+
+.catering {
+  height: 500px;
+  width: 100%;
+}
+
+.contact {
+  height: 500px;
+  width: 100%;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
 }
